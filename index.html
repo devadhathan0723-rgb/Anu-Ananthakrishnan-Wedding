@@ -3,81 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f8f3e9">
+<meta name="theme-color" content="#173f35">
 <meta name="description" content="Wedding invitation of Anu and Ananthakrishnan — 14 December 2026, Kerala.">
 <title>Anu &amp; Ananthakrishnan | Wedding</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
-:root{--cream:#fbf8f1;--white:#fffefa;--gold:#b9945b;--gold-dark:#80643c;--ink:#453b30;--muted:#796f64;--deep:#244b43}
+:root{
+ --ivory:#fbf7ed;--paper:#fffdf7;--cream:#f2ead9;--green:#173f35;--green-2:#285548;
+ --green-soft:#45695b;--gold:#b79558;--gold-light:#d9c28f;--gold-dark:#80643c;
+ --ink:#3e4035;--muted:#756f60;--line:rgba(183,149,88,.42);
+ --shadow:0 18px 48px rgba(34,49,38,.10);
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:18px}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;position:relative;isolation:isolate;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:-12px;z-index:-2;background-image:url("assets/couple.jpg");background-size:cover;background-position:center 28%;background-repeat:no-repeat;filter:blur(5px);opacity:.32;transform:scale(1.04);pointer-events:none}
-body::after{content:"";position:fixed;inset:0;z-index:-1;background:rgba(251,248,241,.48);pointer-events:none}
-.hero{min-height:100svh;padding:34px 18px 92px;display:flex;align-items:center;justify-content:center;text-align:center;background:rgba(248,242,230,.46);backdrop-filter:blur(1px);position:relative}
-.hero-inner{width:min(760px,100%);position:relative;z-index:1}
-.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-dark)}
-h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500}
-h1{font-size:clamp(42px,9vw,76px);line-height:1.08;margin:18px 0;color:#5e4930}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:Georgia,"Times New Roman",serif;position:relative;isolation:isolate;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:-14px;z-index:-2;background:url("assets/couple.jpg") center 28%/cover no-repeat;filter:blur(5px);opacity:.32;transform:scale(1.04);pointer-events:none}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(251,247,237,.66),rgba(251,247,237,.82));pointer-events:none}
+.hero{background:linear-gradient(180deg,rgba(251,247,237,.38),rgba(251,247,237,.72)),url("assets/couple.jpg") center 34%/cover no-repeat;}
+a{color:inherit}
+.hero{min-height:94svh;padding:46px 18px 76px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background:linear-gradient(135deg,rgba(251,247,237,.86),rgba(243,235,218,.70));}
+.hero:before,.hero:after{content:"";position:absolute;left:clamp(14px,4vw,54px);right:clamp(14px,4vw,54px);height:12px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);opacity:.72}
+.hero:before{top:22px}.hero:after{bottom:22px}
+.hero-inner{width:min(790px,100%);position:relative;z-index:1;padding:clamp(28px,6vw,58px) 18px}
+.eyebrow,.label{font-family:Georgia,"Times New Roman",serif;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold-dark)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:normal}
+h1{font-size:clamp(43px,9vw,82px);line-height:1.04;margin:22px 0;color:var(--green);letter-spacing:-.035em}
 .amp{color:var(--gold);font-style:italic}
-.date{font:500 clamp(24px,5vw,34px) 'Playfair Display',serif;letter-spacing:.1em;color:#80643c;margin-top:18px}
-.date small{display:block;font:600 11px 'DM Sans',sans-serif;letter-spacing:.2em;margin-top:8px}
-.open{display:inline-block;margin-top:24px;padding:13px 24px;border-radius:99px;background:#80643c;color:white;text-decoration:none;font-size:13px;transition:transform .25s,background .25s,box-shadow .25s}
-.open:hover{transform:translateY(-3px);background:var(--deep);box-shadow:0 8px 22px #59462c2b}
-section{padding:70px 18px;position:relative}
-.wrap{max-width:920px;margin:auto}
-.label{text-align:center;color:var(--gold-dark);font-size:11px;letter-spacing:.23em;text-transform:uppercase}
-h2{text-align:center;font-size:clamp(30px,6vw,44px);color:#5e4930;margin:12px 0 24px}
-.intro{text-align:center;max-width:680px;margin:0 auto;color:var(--muted);line-height:1.9}
-.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:580px;margin:30px auto 0}
-.unit{background:rgba(255,254,250,.94);border:1px solid #d9c7a7;border-radius:14px;padding:17px 5px;text-align:center;box-shadow:0 8px 24px #80643c0b}
-.unit strong{display:block;font:500 clamp(24px,5vw,36px) 'Playfair Display',serif;color:#8a6c42}
-.unit span{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
-.details{background:rgba(241,234,220,.86)}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.card{background:rgba(255,254,250,.96);border:1px solid #dfcfb2;border-radius:18px;padding:26px 20px;text-align:center;transition:transform .3s,box-shadow .3s}
-.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px #59462c18}
-.symbol{font-size:30px;color:var(--gold-dark)}
-.card h3{font-size:25px;color:#80643c;margin:10px 0}
-.card p{color:var(--muted);line-height:1.8;margin:6px 0}
-.mapbtn{display:inline-block;margin-top:13px;padding:11px 19px;border:1px solid var(--gold);border-radius:99px;color:#725735;text-decoration:none;font-size:13px;transition:background .25s,color .25s}
-.mapbtn:hover{background:var(--gold-dark);color:white}
-.reception{background:rgba(48,75,66,.91);color:#fffaf0}
-.reception h2{color:#fffaf0}
-.reception .label{color:#ead7b4}
-.reception .intro{color:#f2e9da}
-.footer{text-align:center;padding:28px 15px;color:var(--muted);font-size:12px;background:rgba(251,248,241,.72)}
-/* Restrained reveal-on-scroll motion */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
-.reveal.is-visible{opacity:1;transform:translateY(0)}
+.hero-rule{width:min(210px,45%);height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:25px auto}
+.date{font-size:clamp(23px,5vw,34px);letter-spacing:.12em;color:var(--gold-dark);margin-top:22px}
+.date small{display:block;font:600 10px Arial,sans-serif;letter-spacing:.23em;margin-top:10px;color:var(--green-soft)}
+.open{display:inline-block;margin-top:30px;padding:14px 28px;border:1px solid var(--gold);background:var(--green);color:var(--ivory);text-decoration:none;font:600 11px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;transition:transform .25s,background .25s,box-shadow .25s}
+.open:hover{transform:translateY(-3px);background:var(--green-2);box-shadow:0 10px 24px rgba(23,63,53,.18)}
+section{padding:clamp(64px,8vw,94px) 18px;position:relative}
+.wrap{max-width:960px;margin:auto}
+.label{text-align:center;color:var(--gold-dark)}
+h2{text-align:center;font-size:clamp(32px,6vw,48px);color:var(--green);margin:13px 0 25px}
+.intro{text-align:center;max-width:700px;margin:0 auto;color:var(--muted);font-size:17px;line-height:1.9}
+.welcome{background:rgba(255,253,247,.77)}
+.welcome .wrap{padding:clamp(24px,5vw,48px);border:1px solid var(--line);outline:1px solid rgba(183,149,88,.18);outline-offset:7px;background:rgba(255,253,247,.72)}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:650px;margin:38px auto 0}
+.unit{position:relative;background:var(--green);border:1px solid var(--gold);padding:22px 6px 19px;text-align:center;box-shadow:0 10px 26px rgba(23,63,53,.12);transition:transform .3s,box-shadow .3s}
+.unit:hover{transform:translateY(-4px);box-shadow:0 15px 30px rgba(23,63,53,.18)}
+.unit strong{display:block;font-size:clamp(27px,5vw,42px);font-weight:normal;color:#fff9eb;line-height:1.15;font-variant-numeric:tabular-nums}
+.unit span{display:block;margin-top:9px;font:600 9px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light)}
+.details{background:linear-gradient(rgba(239,231,213,.92),rgba(239,231,213,.92))}
+.section-frame{max-width:980px;margin:auto;position:relative}
+.section-frame:before{content:"";position:absolute;inset:12px 0 auto;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:34px}
+.card{position:relative;background:rgba(255,253,247,.94);border:1px solid var(--line);padding:34px 24px 30px;text-align:center;box-shadow:var(--shadow);transition:transform .35s,box-shadow .35s}
+.card:before{content:"";position:absolute;inset:7px;border:1px solid rgba(183,149,88,.22);pointer-events:none}
+.card:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(34,49,38,.14)}
+.symbol{font-size:26px;color:var(--gold-dark);line-height:1}
+.card h3{font-size:27px;color:var(--green);margin:14px 0}
+.card p{font-size:16px;color:var(--muted);line-height:1.8;margin:6px 0}
+.map-pending{margin-top:16px;color:var(--gold-dark);font-size:13px;font-style:italic}\n.mapbtn{display:inline-block;margin-top:16px;padding:12px 19px;border:1px solid var(--gold);color:var(--green);text-decoration:none;font:600 10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;transition:background .25s,color .25s}
+.mapbtn:hover{background:var(--green);color:var(--ivory)}
+.reception{background:var(--green);color:var(--ivory);text-align:center;overflow:hidden}
+.reception:before{content:"";position:absolute;inset:14px;border:1px solid rgba(217,194,143,.5);pointer-events:none}
+.reception .label{color:var(--gold-light)}
+.reception h2{color:var(--ivory)}
+.reception .intro{color:#f1e8d6}
+.blessings{background:linear-gradient(145deg,#173f35,#214c40);color:var(--ivory);text-align:center;padding:clamp(76px,10vw,112px) 20px}
+.blessings:before{content:"";position:absolute;inset:16px;border:1px solid rgba(217,194,143,.5);pointer-events:none}
+.blessings .wrap{max-width:760px}
+.blessings .label{color:var(--gold-light)}
+.blessings h2{color:var(--ivory);margin-bottom:24px}
+.blessings .message{max-width:680px;margin:0 auto;color:#f2ead9;font-size:clamp(17px,2.5vw,20px);line-height:1.95}
+.blessings .signature{margin-top:30px;color:var(--gold-light);font-size:clamp(21px,4vw,28px);font-style:italic}
+.blessings .closing-rule{width:150px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent);margin:26px auto 0}
+.footer{text-align:center;padding:26px 15px;color:var(--muted);font:11px Arial,sans-serif;letter-spacing:.06em;background:rgba(251,247,237,.94)}
+/* Gentle alternating section reveals */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal-left{transform:translateX(-26px)}
+.reveal-right{transform:translateX(26px)}
+.reveal.is-visible{opacity:1;transform:translate(0,0)}
 .hero .hero-inner>*{animation:heroEnter .85s both}
 .hero .hero-inner>*:nth-child(2){animation-delay:.12s}
 .hero .hero-inner>*:nth-child(3){animation-delay:.22s}
 .hero .hero-inner>*:nth-child(4){animation-delay:.32s}
 .hero .hero-inner>*:nth-child(5){animation-delay:.42s}
-@keyframes heroEnter{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-/* Decorative brass nilavilakku */
-.lamp-wrap{position:fixed;right:18px;bottom:16px;width:104px;height:190px;z-index:8;pointer-events:none;filter:drop-shadow(0 7px 10px #6b4a1e2b)}
-.lamp-svg{width:100%;height:100%;overflow:visible}
-.lamp-glow{position:absolute;inset:3px 0 78px;border-radius:50%;background:radial-gradient(ellipse,#ffd77a55 0%,#f6b94a20 42%,transparent 72%);animation:glowPulse 2.7s ease-in-out infinite alternate}
-.flame{transform-origin:50% 100%;animation:flameDance .16s ease-in-out infinite alternate}
-.flame-inner{transform-origin:50% 100%;animation:flameDance .22s ease-in-out infinite alternate-reverse}
-@keyframes flameDance{0%{transform:rotate(-3deg) scaleX(.92) scaleY(.96)}100%{transform:rotate(3deg) scaleX(1.08) scaleY(1.04)}}
-@keyframes glowPulse{from{opacity:.58;transform:scale(.94)}to{opacity:1;transform:scale(1.08)}}
-/* Music control */
-.music-control{position:fixed;left:16px;bottom:18px;z-index:10;display:flex;align-items:center;gap:9px;padding:11px 15px;border:1px solid #c9ae7d;border-radius:99px;background:rgba(255,254,250,.94);color:#624d30;font:600 12px 'DM Sans',sans-serif;box-shadow:0 5px 20px #49351c1c;cursor:pointer;transition:transform .2s,background .2s}
-.music-control:hover{transform:translateY(-2px);background:#fff}
-.music-control:focus-visible,.open:focus-visible,.mapbtn:focus-visible{outline:3px solid #b9945b;outline-offset:3px}
-.music-icon{font-size:16px;line-height:1}
-@media(max-width:600px){
- section{padding:56px 16px}
- .cards{grid-template-columns:1fr}
- .countdown{gap:6px}
- .unit{padding:14px 3px}
- .unit span{font-size:8px}
- .lamp-wrap{width:72px;height:136px;right:8px;bottom:9px}
- .music-control{left:9px;bottom:10px;padding:10px 12px;font-size:11px}
- .hero{padding-bottom:78px}
+@keyframes heroEnter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:640px){
+ section{padding:58px 16px}
+ .hero{min-height:88svh;padding:42px 14px 62px}
+ .hero-inner{padding:36px 10px}
+ .cards{grid-template-columns:1fr;gap:15px}
+ .countdown{gap:7px;margin-top:30px}
+ .unit{padding:17px 3px 15px}
+ .unit span{font-size:8px;letter-spacing:.12em}
+ .intro{font-size:15px}
+ .card{padding:29px 18px}
+ .blessings:before,.reception:before{inset:9px}
 }
 @media(prefers-reduced-motion:reduce){
  html{scroll-behavior:auto}
@@ -92,109 +107,86 @@ h2{text-align:center;font-size:clamp(30px,6vw,44px);color:#5e4930;margin:12px 0 
   <div class="eyebrow">With the blessings of our families</div>
   <h1>Anu <span class="amp">&amp;</span><br>Ananthakrishnan</h1>
   <div class="eyebrow">Request the pleasure of your presence</div>
+  <div class="hero-rule" aria-hidden="true"></div>
   <div class="date">14 · 12 · 2026<small>MONDAY · WEDDING DAY</small></div>
   <a class="open" href="#details">Wedding details</a>
  </div>
 </header>
 <main>
-<section id="welcome">
+<section class="welcome" id="welcome">
  <div class="wrap reveal">
-  <div class="label">A day to remember</div><h2>Two hearts. One beautiful beginning.</h2>
+  <div class="label">A day to remember</div>
+  <h2>Two hearts. One beautiful beginning.</h2>
   <p class="intro">Join us as we celebrate the wedding of Anu and Ananthakrishnan. Your presence and blessings will make the day even more special.</p>
-  <div class="countdown">
-   <div class="unit"><strong id="days">--</strong><span>Days</span></div><div class="unit"><strong id="hours">--</strong><span>Hours</span></div><div class="unit"><strong id="minutes">--</strong><span>Minutes</span></div><div class="unit"><strong id="seconds">--</strong><span>Seconds</span></div>
+  <div class="countdown" aria-label="Countdown to the wedding">
+   <div class="unit"><strong id="days">--</strong><span>Days</span></div>
+   <div class="unit"><strong id="hours">--</strong><span>Hours</span></div>
+   <div class="unit"><strong id="minutes">--</strong><span>Minutes</span></div>
+   <div class="unit"><strong id="seconds">--</strong><span>Seconds</span></div>
   </div>
  </div>
 </section>
 <section class="details" id="details">
- <div class="wrap">
-  <div class="label reveal">The auspicious occasion</div><h2 class="reveal">Wedding Details</h2>
+ <div class="section-frame">
+  <div class="label reveal">The auspicious occasion</div>
+  <h2 class="reveal">Wedding Details</h2>
   <div class="cards">
-   <article class="card reveal"><div class="symbol">✿</div><h3>Wedding Muhurtham</h3><p>Monday, 14 December 2026</p><p>10:00 AM – 11:00 AM</p></article>
-   <article class="card reveal"><div class="symbol">⌖</div><h3>Wedding Venue</h3><p>Sree Dharma Sastha Temple</p><p>Kokothamangalam, Cherthala, Kerala</p><a class="mapbtn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/qKzWgiRfC7551gmY6?g_st=ac">Open exact Google Maps location ↗</a></article>
+   <article class="card reveal reveal-left"><div class="symbol" aria-hidden="true">✥</div><h3>Wedding Muhurtham</h3><p>Monday, 14 December 2026</p><p>10:00 AM – 11:00 AM</p></article>
+   <article class="card reveal reveal-right"><div class="symbol" aria-hidden="true">⌖</div><h3>Wedding Venue</h3><p>Sree Dharma Sastha Temple</p><p>Kokothamangalam, Cherthala, Kerala</p><a class="mapbtn" target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/PnicqTvwpUfZJgPt9">View wedding venue on Google Maps ↗</a></article>
   </div>
  </div>
 </section>
 <section class="reception">
- <div class="wrap reveal"><div class="label">The celebration continues</div><h2>Reception</h2>
+ <div class="wrap reveal reveal-left">
+  <div class="label">The celebration continues</div><h2>Reception</h2>
   <p class="intro"><strong>14 December 2026 · From 5:00 PM</strong><br>At the family residence, Kokothamangalam P.O., Cherthala, Kerala.</p>
+ </div>
+</section>
+<section class="blessings">
+ <div class="wrap reveal reveal-right">
+  <div class="label">With gratitude</div>
+  <h2>Your blessings mean the world</h2>
+  <p class="message">Your presence, love and blessings are the greatest gifts we could receive. Thank you for being part of our special day.</p>
+  <div class="closing-rule" aria-hidden="true"></div>
+  <div class="signature">With love, Anu &amp; Ananthakrishnan</div>
  </div>
 </section>
 </main>
 <footer class="footer">Made with love for Anu &amp; Ananthakrishnan · 14 December 2026</footer>
-
-<!-- Traditional brass nilavilakku: decorative animation, no interaction required. -->
-<div class="lamp-wrap" aria-hidden="true">
- <div class="lamp-glow"></div>
- <svg class="lamp-svg" viewBox="0 0 120 220" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-   <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#704719"/><stop offset=".22" stop-color="#d9aa50"/><stop offset=".48" stop-color="#fff0a2"/><stop offset=".7" stop-color="#a8752b"/><stop offset="1" stop-color="#583916"/></linearGradient>
-   <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff8a16"/><stop offset=".58" stop-color="#ffd34f"/><stop offset="1" stop-color="#fff8cf"/></linearGradient>
-  </defs>
-  <g stroke="#7d541d" stroke-width="1.1" fill="url(#brass)">
-   <path d="M60 70 C47 72 35 79 20 86 Q60 105 100 86 C85 79 73 72 60 70Z"/>
-   <ellipse cx="60" cy="87" rx="40" ry="7" fill="#e7bd68"/>
-   <path d="M54 91 L66 91 L63 158 L57 158Z"/>
-   <path d="M49 106 Q60 111 71 106 L68 113 Q60 118 52 113Z"/>
-   <path d="M52 132 Q60 137 68 132 L66 140 Q60 145 54 140Z"/>
-   <path d="M57 157 L63 157 L68 184 Q60 190 52 184Z"/>
-   <ellipse cx="60" cy="186" rx="19" ry="5"/>
-   <path d="M37 192 Q60 185 83 192 L91 198 Q60 207 29 198Z"/>
-   <ellipse cx="60" cy="199" rx="32" ry="5" fill="#d6a54e"/>
-  </g>
-  <path d="M60 77 C47 70 48 55 60 37 C72 55 73 70 60 77Z" class="flame" fill="url(#fire)"/>
-  <path d="M60 76 C54 67 57 57 61 49 C67 61 67 69 60 76Z" class="flame-inner" fill="#fffbe0"/>
-  <path d="M60 78 Q48 82 39 83" stroke="#fff0b1" stroke-width="2" opacity=".85" fill="none"/>
-  <circle cx="60" cy="82" r="3" fill="#fff0a2"/>
- </svg>
-</div>
-
-<button class="music-control" id="musicToggle" type="button" aria-pressed="false" aria-label="Turn wedding music on">
- <span class="music-icon" id="musicIcon" aria-hidden="true">♫</span><span id="musicLabel">Music off</span>
-</button>
-<audio id="weddingMusic" src="assets/sita-kalyanam.mp3" loop preload="none"></audio>
-
 <script>
 const wedding = new Date('2026-12-14T10:00:00+05:30').getTime();
 function tick(){
- const d=Math.max(0,wedding-Date.now());
- const v={days:Math.floor(d/86400000),hours:Math.floor(d%86400000/3600000),minutes:Math.floor(d%3600000/60000),seconds:Math.floor(d%60000/1000)};
- for(const [k,n] of Object.entries(v)){const el=document.getElementById(k);if(el)el.textContent=String(n).padStart(2,'0')}
-}
-tick();setInterval(tick,1000);
-
-// Reveal sections gently as they enter the viewport; show everything if unsupported.
-const revealItems=document.querySelectorAll('.reveal');
-if('IntersectionObserver' in window){
- const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}});
- },{threshold:.12});
- revealItems.forEach(el=>observer.observe(el));
-}else{revealItems.forEach(el=>el.classList.add('is-visible'))}
-
-// Browsers require a visitor gesture before sound can start.
-const music=document.getElementById('weddingMusic');
-const toggle=document.getElementById('musicToggle');
-const label=document.getElementById('musicLabel');
-const icon=document.getElementById('musicIcon');
-toggle.addEventListener('click',async()=>{
- if(music.paused){
-  try{
-   await music.play();
-   toggle.setAttribute('aria-pressed','true');
-   toggle.setAttribute('aria-label','Turn wedding music off');
-   label.textContent='Music on';icon.textContent='♫';
-  }catch(error){
-   label.textContent='Tap to retry';icon.textContent='♫';
-  }
- }else{
-  music.pause();
-  toggle.setAttribute('aria-pressed','false');
-  toggle.setAttribute('aria-label','Turn wedding music on');
-  label.textContent='Music off';icon.textContent='♫';
+ const remaining=Math.max(0,wedding-Date.now());
+ const values={
+  days:Math.floor(remaining/86400000),
+  hours:Math.floor(remaining%86400000/3600000),
+  minutes:Math.floor(remaining%3600000/60000),
+  seconds:Math.floor(remaining%60000/1000)
+ };
+ for(const [key,value] of Object.entries(values)){
+  const element=document.getElementById(key);
+  if(element) element.textContent=String(value).padStart(2,'0');
  }
-});
-music.addEventListener('error',()=>{label.textContent='Music unavailable';toggle.setAttribute('aria-label','Wedding music file unavailable')});
+}
+tick();
+setInterval(tick,1000);
+
+const revealItems=document.querySelectorAll('.reveal');
+if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+ revealItems.forEach(item=>item.classList.add('is-visible'));
+}else if('IntersectionObserver' in window){
+ const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+   if(entry.isIntersecting){
+    entry.target.classList.add('is-visible');
+    observer.unobserve(entry.target);
+   }
+  });
+ },{threshold:.12});
+ revealItems.forEach(item=>observer.observe(item));
+}else{
+ revealItems.forEach(item=>item.classList.add('is-visible'));
+}
 </script>
 </body>
 </html>
